@@ -29,7 +29,7 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#" className="font-display text-2xl font-semibold tracking-tight text-primary">
-          Verdant
+          OPETIT
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
