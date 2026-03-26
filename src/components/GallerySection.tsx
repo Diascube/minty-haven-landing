@@ -7,12 +7,12 @@ import dessert1 from "@/assets/dessert-1.jpg";
 import barista from "@/assets/barista.jpg";
 
 const images = [
-  { src: interior1, alt: "Cozy interior corner", span: "md:col-span-1 md:row-span-2" },
-  { src: food1, alt: "Avocado toast", span: "md:col-span-1" },
-  { src: coffeeArt, alt: "Latte art", span: "md:col-span-1" },
-  { src: heroImg, alt: "Coffee shop interior", span: "md:col-span-2" },
-  { src: dessert1, alt: "Chocolate dessert", span: "md:col-span-1" },
-  { src: barista, alt: "Barista at work", span: "md:col-span-1 md:row-span-2" },
+  { src: interior1, alt: "Уютный уголок интерьера", span: "md:col-span-1 md:row-span-2" },
+  { src: food1, alt: "Тост с авокадо", span: "md:col-span-1" },
+  { src: coffeeArt, alt: "Латте-арт", span: "md:col-span-1" },
+  { src: heroImg, alt: "Интерьер кофейни", span: "md:col-span-2" },
+  { src: dessert1, alt: "Шоколадный десерт", span: "md:col-span-1" },
+  { src: barista, alt: "Бариста за работой", span: "md:col-span-1 md:row-span-2" },
 ];
 
 const GallerySection = () => (
@@ -20,10 +20,10 @@ const GallerySection = () => (
     <div className="container">
       <AnimatedSection className="text-center mb-16">
         <p className="font-body text-sm tracking-[0.2em] uppercase text-accent mb-4">
-          Gallery
+          Галерея
         </p>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
-          A Glimpse Inside
+          Загляните к нам
         </h2>
       </AnimatedSection>
 

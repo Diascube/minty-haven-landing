@@ -5,29 +5,29 @@ const Footer = () => (
     <div className="container">
       <div className="grid md:grid-cols-3 gap-10 mb-12">
         <div>
-          <h3 className="font-display text-2xl font-semibold text-dark-foreground mb-4">Verdant</h3>
+          <h3 className="font-display text-2xl font-semibold text-dark-foreground mb-4">Opetit</h3>
           <p className="font-body text-sm text-dark-foreground/60 leading-relaxed">
-            Coffee, food, and atmosphere —
+            Кофе, еда и атмосфера —
             <br />
-            all in one place.
+            всё в одном месте.
           </p>
         </div>
 
         <div>
           <h4 className="font-body text-sm font-semibold text-dark-foreground mb-4 uppercase tracking-wider">
-            Contact
+            Контакты
           </h4>
           <div className="font-body text-sm text-dark-foreground/60 space-y-2">
             <p>123 Green Avenue, Downtown</p>
-            <p>Mon–Fri: 7:30 AM — 10:00 PM</p>
-            <p>Sat–Sun: 9:00 AM — 11:00 PM</p>
+            <p>Пн–Пт: 7:30 — 22:00</p>
+            <p>Сб–Вс: 9:00 — 23:00</p>
             <p>+1 (234) 567-890</p>
           </div>
         </div>
 
         <div>
           <h4 className="font-body text-sm font-semibold text-dark-foreground mb-4 uppercase tracking-wider">
-            Follow Us
+            Мы в соцсетях
           </h4>
           <div className="flex gap-3">
             <a
@@ -63,7 +63,7 @@ const Footer = () => (
 
       <div className="border-t border-dark-foreground/10 pt-8 text-center">
         <p className="font-body text-xs text-dark-foreground/40">
-          © {new Date().getFullYear()} Verdant. All rights reserved.
+          © {new Date().getFullYear()} Opetit. Все права защищены.
         </p>
       </div>
     </div>

@@ -6,10 +6,10 @@ const ContactsSection = () => (
     <div className="container">
       <AnimatedSection className="text-center mb-16">
         <p className="font-body text-sm tracking-[0.2em] uppercase text-accent mb-4">
-          Find Us
+          Контакты
         </p>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
-          Get in Touch
+          Как нас найти
         </h2>
       </AnimatedSection>
 
@@ -21,7 +21,7 @@ const ContactsSection = () => (
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Address</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Адрес</h3>
                 <p className="font-body text-sm text-muted-foreground">
                   123 Green Avenue, Downtown District
                   <br />
@@ -35,11 +35,11 @@ const ContactsSection = () => (
                 <Clock className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Working Hours</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Часы работы</h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  Mon — Fri: 7:30 AM — 10:00 PM
+                  Пн — Пт: 7:30 — 22:00
                   <br />
-                  Sat — Sun: 9:00 AM — 11:00 PM
+                  Сб — Вс: 9:00 — 23:00
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const ContactsSection = () => (
                 <MessageCircle className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Connect</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-1">Связаться</h3>
                 <div className="flex gap-3 mt-2">
                   <a
                     href="https://instagram.com"
@@ -94,7 +94,7 @@ const ContactsSection = () => (
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Verdant location map"
+              title="Карта расположения Opetit"
             />
           </div>
         </AnimatedSection>

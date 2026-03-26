@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
 
-const categories = ["Coffee", "Drinks", "Breakfast", "Main Dishes", "Desserts"] as const;
+const categories = ["Кофе", "Напитки", "Завтраки", "Основные блюда", "Десерты"] as const;
 
 type Category = typeof categories[number];
 
@@ -12,55 +12,55 @@ interface MenuItem {
 }
 
 const menuData: Record<Category, MenuItem[]> = {
-  Coffee: [
-    { name: "Espresso", desc: "Rich, bold single shot from Ethiopian beans", price: "$3.50" },
-    { name: "Flat White", desc: "Velvety microfoam with double ristretto", price: "$5.00" },
-    { name: "Pour Over", desc: "Hand-brewed single origin, rotating selection", price: "$5.50" },
-    { name: "Cold Brew", desc: "20-hour steeped, smooth and refreshing", price: "$4.50" },
-    { name: "Matcha Latte", desc: "Ceremonial grade matcha with oat milk", price: "$5.50" },
-    { name: "Cappuccino", desc: "Classic Italian style with silky foam", price: "$4.50" },
+  "Кофе": [
+    { name: "Эспрессо", desc: "Насыщенный шот из эфиопских зёрен", price: "$3.50" },
+    { name: "Флэт Уайт", desc: "Бархатная микропена с двойным ристретто", price: "$5.00" },
+    { name: "Пуровер", desc: "Ручная заварка моносорта, сезонная подборка", price: "$5.50" },
+    { name: "Колд Брю", desc: "20-часовой холодный настой, мягкий и освежающий", price: "$4.50" },
+    { name: "Матча Латте", desc: "Церемониальный матча на овсяном молоке", price: "$5.50" },
+    { name: "Капучино", desc: "Классический итальянский стиль с шелковистой пенкой", price: "$4.50" },
   ],
-  Drinks: [
-    { name: "Fresh Orange Juice", desc: "Squeezed to order, pure citrus", price: "$4.00" },
-    { name: "Berry Smoothie", desc: "Mixed berries, banana, yogurt", price: "$6.00" },
-    { name: "Kombucha", desc: "House-brewed, seasonal flavors", price: "$5.00" },
-    { name: "Chai Latte", desc: "Spiced black tea with steamed milk", price: "$5.00" },
-    { name: "Lemonade", desc: "Homemade with fresh mint and ginger", price: "$4.50" },
+  "Напитки": [
+    { name: "Свежевыжатый апельсин", desc: "Отжат при вас, чистый цитрус", price: "$4.00" },
+    { name: "Ягодный смузи", desc: "Микс ягод, банан, йогурт", price: "$6.00" },
+    { name: "Комбуча", desc: "Домашняя варка, сезонные вкусы", price: "$5.00" },
+    { name: "Чай Латте", desc: "Пряный чёрный чай со взбитым молоком", price: "$5.00" },
+    { name: "Лимонад", desc: "Домашний, с мятой и имбирём", price: "$4.50" },
   ],
-  Breakfast: [
-    { name: "Avocado Toast", desc: "Sourdough, poached egg, microgreens, chili flakes", price: "$12.00" },
-    { name: "Granola Bowl", desc: "House granola, Greek yogurt, seasonal berries", price: "$9.00" },
-    { name: "Eggs Benedict", desc: "Smoked salmon, hollandaise, English muffin", price: "$14.00" },
-    { name: "Croissant Plate", desc: "Butter croissant, jam, soft cheese, fruit", price: "$8.00" },
-    { name: "Pancake Stack", desc: "Fluffy pancakes, maple syrup, fresh berries", price: "$11.00" },
+  "Завтраки": [
+    { name: "Тост с авокадо", desc: "На закваске, яйцо пашот, микрозелень, чили", price: "$12.00" },
+    { name: "Боул с гранолой", desc: "Домашняя гранола, греческий йогурт, сезонные ягоды", price: "$9.00" },
+    { name: "Яйца Бенедикт", desc: "Копчёный лосось, голландез, английский маффин", price: "$14.00" },
+    { name: "Тарелка с круассаном", desc: "Масляный круассан, джем, мягкий сыр, фрукты", price: "$8.00" },
+    { name: "Панкейки", desc: "Пышные панкейки, кленовый сироп, свежие ягоды", price: "$11.00" },
   ],
-  "Main Dishes": [
-    { name: "Grilled Salmon", desc: "Atlantic salmon, quinoa, roasted vegetables", price: "$18.00" },
-    { name: "Truffle Pasta", desc: "Fresh fettuccine, black truffle, parmesan", price: "$16.00" },
-    { name: "Buddha Bowl", desc: "Roasted chickpeas, avocado, tahini dressing", price: "$14.00" },
-    { name: "Wagyu Burger", desc: "Brioche bun, aged cheddar, caramelized onions", price: "$17.00" },
-    { name: "Caesar Salad", desc: "Romaine, croutons, parmesan, house dressing", price: "$12.00" },
+  "Основные блюда": [
+    { name: "Лосось на гриле", desc: "Атлантический лосось, киноа, печёные овощи", price: "$18.00" },
+    { name: "Паста с трюфелем", desc: "Свежие феттучини, чёрный трюфель, пармезан", price: "$16.00" },
+    { name: "Будда-боул", desc: "Запечённый нут, авокадо, тахини", price: "$14.00" },
+    { name: "Бургер Вагю", desc: "Булочка бриошь, выдержанный чеддер, карамелизированный лук", price: "$17.00" },
+    { name: "Салат Цезарь", desc: "Романо, крутоны, пармезан, домашний соус", price: "$12.00" },
   ],
-  Desserts: [
-    { name: "Chocolate Fondant", desc: "Warm molten center, vanilla ice cream", price: "$10.00" },
-    { name: "Tiramisu", desc: "Classic Italian, mascarpone, espresso-soaked", price: "$9.00" },
-    { name: "Crème Brûlée", desc: "Madagascar vanilla, caramelized sugar crust", price: "$8.00" },
-    { name: "Cheesecake", desc: "New York style, berry compote", price: "$9.00" },
+  "Десерты": [
+    { name: "Шоколадный фондан", desc: "Тёплая жидкая начинка, ванильное мороженое", price: "$10.00" },
+    { name: "Тирамису", desc: "Классический итальянский, маскарпоне, эспрессо", price: "$9.00" },
+    { name: "Крем-брюле", desc: "Мадагаскарская ваниль, карамельная корочка", price: "$8.00" },
+    { name: "Чизкейк", desc: "Нью-Йорк стайл, ягодный компот", price: "$9.00" },
   ],
 };
 
 const MenuSection = () => {
-  const [active, setActive] = useState<Category>("Coffee");
+  const [active, setActive] = useState<Category>("Кофе");
 
   return (
     <section id="menu" className="py-24 md:py-32 bg-cream">
       <div className="container">
         <AnimatedSection className="text-center mb-16">
           <p className="font-body text-sm tracking-[0.2em] uppercase text-accent mb-4">
-            Our Menu
+            Наше меню
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
-            Crafted with Passion
+            Создано с душой
           </h2>
         </AnimatedSection>
 

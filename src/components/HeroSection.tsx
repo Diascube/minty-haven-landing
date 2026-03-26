@@ -6,7 +6,7 @@ const HeroSection = () => (
     <div className="absolute inset-0">
       <img
         src={heroImg}
-        alt="Verdant coffee shop interior"
+        alt="Интерьер кофейни Opetit"
         className="w-full h-full object-cover"
         width={1920}
         height={1080}
@@ -21,7 +21,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.2 }}
         className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-dark-foreground/70 mb-4"
       >
-        Coffee · Kitchen · Atmosphere
+        Кофе · Кухня · Атмосфера
       </motion.p>
 
       <motion.h1
@@ -39,7 +39,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.6 }}
         className="font-body text-lg md:text-xl text-dark-foreground/80 max-w-md mx-auto mb-10"
       >
-        Where every cup tells a story and every dish is crafted with care
+        Где каждая чашка рассказывает историю, а каждое блюдо создано с душой
       </motion.p>
 
       <motion.div
@@ -52,13 +52,13 @@ const HeroSection = () => (
           href="#menu"
           className="bg-primary-foreground/90 text-dark px-8 py-3.5 rounded-lg font-body text-sm font-medium hover:bg-primary-foreground transition-all duration-300 hover:scale-105"
         >
-          View Menu
+          Смотреть меню
         </a>
         <a
           href="#reservation"
           className="border border-primary-foreground/40 text-dark-foreground px-8 py-3.5 rounded-lg font-body text-sm font-medium hover:bg-primary-foreground/10 transition-all duration-300 hover:scale-105"
         >
-          Book a Table
+          Забронировать стол
         </a>
       </motion.div>
     </div>
