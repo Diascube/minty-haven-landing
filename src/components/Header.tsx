@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Menu", href: "#menu" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contacts", href: "#contacts" },
+  { label: "О нас", href: "#about" },
+  { label: "Меню", href: "#menu" },
+  { label: "Галерея", href: "#gallery" },
+  { label: "Отзывы", href: "#reviews" },
+  { label: "Контакты", href: "#contacts" },
 ];
 
 const Header = () => {
@@ -46,14 +46,14 @@ const Header = () => {
             href="#reservation"
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-accent transition-colors duration-300"
           >
-            Book a Table
+            Забронировать
           </a>
         </nav>
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden text-foreground p-2"
-          aria-label="Toggle menu"
+          aria-label="Открыть меню"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -77,7 +77,7 @@ const Header = () => {
               onClick={() => setMobileOpen(false)}
               className="bg-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-medium text-center mt-2"
             >
-              Book a Table
+              Забронировать
             </a>
           </nav>
         </div>

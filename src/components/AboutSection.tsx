@@ -9,7 +9,7 @@ const AboutSection = () => (
           <div className="overflow-hidden rounded-2xl">
             <img
               src={coffeeArt}
-              alt="Artisan latte art"
+              alt="Латте-арт от бариста"
               className="w-full h-[400px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               loading="lazy"
               width={800}
@@ -20,22 +20,22 @@ const AboutSection = () => (
 
         <AnimatedSection delay={0.2}>
           <p className="font-body text-sm tracking-[0.2em] uppercase text-accent mb-4">
-            Our Story
+            Наша история
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
-            More Than Just
+            Больше, чем просто
             <br />
-            <span className="text-primary italic">a Coffee Shop</span>
+            <span className="text-primary italic">кофейня</span>
           </h2>
           <p className="font-body text-base text-muted-foreground leading-relaxed mb-6">
-            Verdant is a place where specialty coffee meets a full kitchen experience. 
-            We source single-origin beans from the world's best farms and pair them with 
-            dishes crafted by our talented chefs using only the freshest local ingredients.
+            Opetit — это место, где спешиалти-кофе встречается с полноценной кухней. 
+            Мы закупаем моносортовые зёрна с лучших ферм мира и сочетаем их с блюдами, 
+            приготовленными нашими талантливыми шефами из свежайших локальных продуктов.
           </p>
           <p className="font-body text-base text-muted-foreground leading-relaxed">
-            Whether you're here for a morning espresso, a business lunch, or an evening 
-            with friends — every visit is designed to feel like a small escape from the 
-            everyday. Cozy interiors, warm service, and flavors that stay with you.
+            Утренний эспрессо, деловой обед или вечер с друзьями — каждый визит задуман 
+            как маленький побег от повседневности. Уютный интерьер, тёплое обслуживание 
+            и вкусы, которые остаются с вами.
           </p>
         </AnimatedSection>
       </div>

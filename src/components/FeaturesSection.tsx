@@ -4,23 +4,23 @@ import AnimatedSection from "./AnimatedSection";
 const features = [
   {
     icon: Clock,
-    title: "Fast Service",
-    desc: "Your coffee is ready in under 3 minutes. Our kitchen serves dishes fresh and on time.",
+    title: "Быстрый сервис",
+    desc: "Ваш кофе готов менее чем за 3 минуты. Кухня подаёт блюда свежими и вовремя.",
   },
   {
     icon: Leaf,
-    title: "Quality Ingredients",
-    desc: "We source organic, locally-grown produce and single-origin specialty coffee beans.",
+    title: "Качественные продукты",
+    desc: "Органические локальные продукты и моносортовые зёрна спешиалти-кофе.",
   },
   {
     icon: Sofa,
-    title: "Cozy Atmosphere",
-    desc: "Carefully designed interiors with warm lighting, comfortable seating, and ambient music.",
+    title: "Уютная атмосфера",
+    desc: "Продуманный интерьер с тёплым светом, удобными креслами и приятной музыкой.",
   },
   {
     icon: Briefcase,
-    title: "Work & Meet",
-    desc: "High-speed Wi-Fi, power outlets at every table, and quiet zones for productive sessions.",
+    title: "Работа и встречи",
+    desc: "Быстрый Wi-Fi, розетки у каждого столика и тихие зоны для продуктивной работы.",
   },
 ];
 
@@ -29,10 +29,10 @@ const FeaturesSection = () => (
     <div className="container">
       <AnimatedSection className="text-center mb-16">
         <p className="font-body text-sm tracking-[0.2em] uppercase text-primary-foreground/60 mb-4">
-          Why Verdant
+          Почему Opetit
         </p>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground">
-          What Makes Us Special
+          Что делает нас особенными
         </h2>
       </AnimatedSection>
 

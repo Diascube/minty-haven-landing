@@ -3,23 +3,23 @@ import AnimatedSection from "./AnimatedSection";
 
 const reviews = [
   {
-    name: "Anna K.",
-    text: "The best coffee I've ever had in the city. The atmosphere is incredible — I come here every morning before work. The avocado toast is perfection!",
+    name: "Анна К.",
+    text: "Лучший кофе в городе. Атмосфера потрясающая — прихожу сюда каждое утро перед работой. Тост с авокадо — совершенство!",
     rating: 5,
   },
   {
-    name: "Dmitry S.",
-    text: "Finally, a place where I can work comfortably and eat really well. The truffle pasta alone is worth the visit. Great Wi-Fi too.",
+    name: "Дмитрий С.",
+    text: "Наконец-то место, где можно комфортно работать и вкусно есть. Паста с трюфелем стоит визита. Отличный Wi-Fi.",
     rating: 5,
   },
   {
-    name: "Maria L.",
-    text: "We celebrated my birthday here and it was magical. The staff is so attentive, the food is outstanding, and the desserts are to die for.",
+    name: "Мария Л.",
+    text: "Отмечали мой день рождения — было волшебно. Персонал внимательный, еда великолепная, а десерты просто невероятные.",
     rating: 5,
   },
   {
-    name: "Alex P.",
-    text: "Verdant became our go-to spot for team meetings. The cozy corners, excellent coffee, and quiet ambiance make it perfect for business.",
+    name: "Алексей П.",
+    text: "Opetit стал нашим любимым местом для рабочих встреч. Уютные уголки, отличный кофе и спокойная обстановка — идеально для дел.",
     rating: 5,
   },
 ];
@@ -29,10 +29,10 @@ const TestimonialsSection = () => (
     <div className="container">
       <AnimatedSection className="text-center mb-16">
         <p className="font-body text-sm tracking-[0.2em] uppercase text-accent mb-4">
-          Testimonials
+          Отзывы
         </p>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
-          What Our Guests Say
+          Что говорят наши гости
         </h2>
       </AnimatedSection>
 
@@ -46,7 +46,7 @@ const TestimonialsSection = () => (
                 ))}
               </div>
               <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1 mb-4">
-                "{r.text}"
+                «{r.text}»
               </p>
               <p className="font-body text-sm font-semibold text-foreground">
                 {r.name}
