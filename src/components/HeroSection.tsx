@@ -30,7 +30,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.4 }}
         className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold text-dark-foreground mb-6"
       >
-        Verdant
+        OPETIT
       </motion.h1>
 
       <motion.p
