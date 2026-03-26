@@ -85,7 +85,7 @@ const menuData: Record<Category, MenuItem[]> = {
 };
 
 const MenuSection = () => {
-  const [active, setActive] = useState<Category>("Кофе");
+  const [active, setActive] = useState<Category>("Завтраки");
 
   return (
     <section id="menu" className="py-24 md:py-32 bg-cream">
