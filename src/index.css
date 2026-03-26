@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 25% 97%;
+    --foreground: 160 15% 15%;
+
+    --card: 40 20% 95%;
+    --card-foreground: 160 15% 15%;
+
+    --popover: 40 25% 97%;
+    --popover-foreground: 160 15% 15%;
+
+    --primary: 160 30% 28%;
+    --primary-foreground: 40 25% 97%;
+
+    --secondary: 38 30% 90%;
+    --secondary-foreground: 160 15% 15%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 160 8% 45%;
+
+    --accent: 160 20% 38%;
+    --accent-foreground: 40 25% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 160 30% 28%;
+
+    --radius: 0.625rem;
+
+    --warm: 30 40% 55%;
+    --warm-foreground: 40 25% 97%;
+    --cream: 40 30% 94%;
+    --dark: 160 20% 12%;
+    --dark-foreground: 40 20% 90%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
