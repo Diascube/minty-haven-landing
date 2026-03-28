@@ -13,6 +13,10 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const handleNavClick = () => {
+    setMobileOpen(false);
+  };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
@@ -28,7 +32,10 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="font-display text-2xl font-semibold tracking-tight text-primary">
+        <a
+          href="#"
+          className="font-display text-2xl font-semibold tracking-tight text-primary"
+        >
           OPETIT
         </a>
 
@@ -37,6 +44,7 @@ const Header = () => {
             <a
               key={l.href}
               href={l.href}
+              onClick={handleNavClick}
               className="font-body text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
             >
               {l.label}
@@ -44,6 +52,7 @@ const Header = () => {
           ))}
           <a
             href="#reservation"
+            onClick={handleNavClick}
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-accent transition-colors duration-300"
           >
             Забронировать
@@ -66,7 +75,7 @@ const Header = () => {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={handleNavClick}
                 className="font-body text-base text-foreground/80 hover:text-primary py-2 transition-colors"
               >
                 {l.label}
@@ -74,7 +83,7 @@ const Header = () => {
             ))}
             <a
               href="#reservation"
-              onClick={() => setMobileOpen(false)}
+              onClick={handleNavClick}
               className="bg-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-medium text-center mt-2"
             >
               Забронировать
