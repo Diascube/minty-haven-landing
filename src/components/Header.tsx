@@ -13,7 +13,15 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleNavClick = () => {
+  const handleAnchorClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     setMobileOpen(false);
   };
 
@@ -44,7 +52,7 @@ const Header = () => {
             <a
               key={l.href}
               href={l.href}
-              onClick={handleNavClick}
+              onClick={(e) => handleAnchorClick(e, l.href.slice(1))}
               className="font-body text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
             >
               {l.label}
@@ -52,7 +60,7 @@ const Header = () => {
           ))}
           <a
             href="#reservation"
-            onClick={handleNavClick}
+            onClick={(e) => handleAnchorClick(e, "reservation")}
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-accent transition-colors duration-300"
           >
             Забронировать
@@ -75,7 +83,7 @@ const Header = () => {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={handleNavClick}
+                onClick={(e) => handleAnchorClick(e, l.href.slice(1))}
                 className="font-body text-base text-foreground/80 hover:text-primary py-2 transition-colors"
               >
                 {l.label}
@@ -83,7 +91,7 @@ const Header = () => {
             ))}
             <a
               href="#reservation"
-              onClick={handleNavClick}
+              onClick={(e) => handleAnchorClick(e, "reservation")}
               className="bg-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-medium text-center mt-2"
             >
               Забронировать
