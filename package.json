@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://<username>.github.io/minty-haven-landing-main",
+  "homepage": "https://Diascube.github.io/minty-haven-landing-main",
   "type": "module",
   "scripts": {
     "dev": "vite",
