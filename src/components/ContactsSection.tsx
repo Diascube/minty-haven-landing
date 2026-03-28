@@ -31,7 +31,7 @@ const ContactsSection = () => (
                   Адрес
                 </h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  ТРЦ Almaty Mall​Ораза Жандосова улица, 83​1 этаж; на главном
+                  ТРЦ Almaty Mall ​Ораза Жандосова улица, 1 этаж; на главном
                   входе <br></br>
                   Ауэзовский район, Алматы, 050052
                 </p>

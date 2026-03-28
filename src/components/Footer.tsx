@@ -20,10 +20,9 @@ const Footer = () => (
             Контакты
           </h4>
           <div className="font-body text-sm text-dark-foreground/60 space-y-2">
-            <p>123 Green Avenue, Downtown</p>
-            <p>Пн–Пт: 7:30 — 22:00</p>
-            <p>Сб–Вс: 9:00 — 23:00</p>
-            <p>+1 (234) 567-890</p>
+            <p>ТРЦ Almaty Mall ​Ораза Жандосова 83</p>
+            <p>Пн-Вс: 9:00 — 22:00</p>
+            <p>+7 775 853 0035</p>
           </div>
         </div>
 
