@@ -51,7 +51,7 @@ const Footer = () => (
               <MessageCircle className="w-4 h-4" />
             </a>
             <a
-              href="https://2gis.com"
+              href="https://2gis.kz/almaty/search/Opetit%2C%20%D0%BA%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8F/firm/70000001089354535/76.858439%2C43.207413?m=76.893175%2C43.218413%2F11.79"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-dark-foreground/20 text-dark-foreground/60 flex items-center justify-center hover:bg-dark-foreground/10 hover:text-dark-foreground transition-all duration-300"
